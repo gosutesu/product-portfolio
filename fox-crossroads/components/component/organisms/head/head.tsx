@@ -16,6 +16,7 @@ export const CustomHead: FunctionComponent = () => {
                 rel="stylesheet"/>
           <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c&display=swap"
                 rel="stylesheet"/>
+          <link rel="shortcut icon" href="/static/favicon.ico" />
         </Head>
       </div>
   );
