@@ -22,6 +22,11 @@ const style = css`
   p {
     margin: 0px;
     font-family: 'Kosugi Maru', sans-serif;
-    font-size: 31px;
+    font-size: 200%;
+  }
+  @media screen and (max-width: 480px) { 
+    p {
+      font-size: 100%;
+    }
   }
 `;

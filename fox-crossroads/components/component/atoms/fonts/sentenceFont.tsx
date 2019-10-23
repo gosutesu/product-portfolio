@@ -22,6 +22,11 @@ const style = css`
   p {
     margin: 0px;
     font-family: 'M PLUS Rounded 1c', sans-serif;
-    font-size: 18px;
+    font-size: 100%;
+  }
+  @media screen and (max-width: 480px) { 
+    p {
+      font-size: 80%;
+    }
   }
 `;

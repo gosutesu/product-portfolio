@@ -6,26 +6,27 @@ import {RoundedLink} from "../../atoms/links/roundedLink";
 
 export const TopBody: FunctionComponent = () => {
   return (
-      <div className="body">
-        <div>
+      <main>
+        <div className="profile">
           <SummaryProfile />
         </div>
         <div className="link">
           <RoundedLink file={"/static/pdf/history.pdf"} text={"職務経歴書を見る"}/>
         </div>
         <style jsx>{style}</style>
-      </div>
+      </main>
   );
 }
 
 const style = css`
-  .body {
-    height: calc(100vh - 74px);
+  main {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: var(--light-color);
+  }
+  .profile {
+    margin-top: 120px;
   }
   .link {
     width: 320px;

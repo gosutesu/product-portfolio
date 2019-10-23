@@ -4,27 +4,20 @@ import {HeaderTitle} from "../../molecules/titles/headerTitle";
 
 export const BasicHeader: FunctionComponent = () => {
   return (
-      <div className="header">
+      <header className="header">
         <div>
           <HeaderTitle/>
         </div>
-        <div className="menu">
-        </div>
         <style jsx>{style}</style>
-      </div>
+      </header>
   );
 }
 
 const style = css`
-  .header {
+  header {
     display: flex;
     padding: 7px;
     background-color: var(--main-color);
     color: var(--light-font-color);
-  }
-  .menu {
-    width: 60px;
-    height: 60px;
-    margin-left: auto;
   }
 `;

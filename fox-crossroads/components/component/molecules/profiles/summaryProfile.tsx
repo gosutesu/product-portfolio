@@ -15,13 +15,16 @@ export const SummaryProfile: FunctionComponent = () => {
             <SentenceFont text={"経歴４年。"}/>
           </div>
           <div className="sentence-part">
-            <SentenceFont text={"サーバーサイドエンジニア。"}/>
+            <SentenceFont text={"サーバーサイド。"}/>
           </div>
           <div className="sentence-part">
-            <SentenceFont text={"Java/C/要件定義/設計/テスト。"}/>
+            <SentenceFont text={"Java/C。"}/>
           </div>
           <div className="sentence-part">
-            <SentenceFont text={"型のある言語と北方謙三先生が好き。"}/>
+            <SentenceFont text={"要件定義/設計/テスト。"}/>
+          </div>
+          <div className="sentence-part">
+            <SentenceFont text={"型のある言語が好き。"}/>
           </div>
         </div>
         <div className="jumping">
@@ -51,4 +54,13 @@ const style = css`
     width: 160px;
     align-self: flex-end; 
   }
+  @media screen and (max-width: 480px) { 
+    .sleeping {
+      display: none;
+    }
+    .jumping {
+      display: none;
+    }
+  }
+
 `;

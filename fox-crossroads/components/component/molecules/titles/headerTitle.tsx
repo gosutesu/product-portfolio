@@ -9,7 +9,7 @@ export const HeaderTitle: FunctionComponent = () => {
         <div className='header-title-icon'>
           <FoxMoving/>
         </div>
-        <div>
+        <div className='header-title-font'>
           <AccentFont text="きつねの十字路"/>
         </div>
         <style jsx>{style}</style>
@@ -26,5 +26,13 @@ const style = css`
     width: 58px;
     height: 58px;
     margin: 6px 13px 0px 8px;
+  }
+  @media screen and (max-width: 480px) { 
+    .header-title {
+      height: 46px;
+    }
+    .header-title-icon {
+      display: none;
+    }
   }
 `;
